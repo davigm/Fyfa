@@ -88,7 +88,9 @@ def inserir_resultados(tabela):
     tabela['jogo' + str(jogo)][1][0] = input('Gols do ' + tabela['jogo' + str(jogo)][0][0])
     tabela['jogo' + str(jogo)][1][1] = input('Gols do ' + tabela['jogo' + str(jogo)][0][1])
     print(tabela['jogo'+str(jogo)])
-    if tabela['jogo' + str(jogo)[1][0]] > tabela['jogo' + str(jogo)[1][1]]:
+    return tabela
+
+    '''if tabela['jogo' + str(jogo)[1][0]] > tabela['jogo' + str(jogo)[1][1]]:
         tabela['jogo' + str(jogo)[2]] = tabela['jogo' + str(jogo)[0][0]]
 
     elif tabela['jogo' + str(jogo)[1][0]] < tabela['jogo' + str(jogo)[1][1]]:
@@ -97,7 +99,7 @@ def inserir_resultados(tabela):
     else:
         tabela['jogo' + str(jogo)[3]] = True
 
-    print(tabela['jogo'+str(jogo)])
+    print(tabela['jogo'+str(jogo)])'''
 
 
 sair = True
